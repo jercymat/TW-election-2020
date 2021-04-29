@@ -21,7 +21,7 @@ Visualization of Taiwan election 2020 with county and township data, projecting 
 ### Installation
 Just clone it into your host
 ```
-git clone https://gitlab.com/jercymat/<git-repo>.git
+git clone https://gitlab.com/jercymat/tw-election-2020.git
 ```
 ## Running
 Navigate to the root path of the repo then run the server.
