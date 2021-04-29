@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>中華民國2020年正副總統選舉</title>
+
+  <!-- d3.js -->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://d3js.org/topojson.v2.min.js"></script>
+
+  <!-- Custom Files -->
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <svg></svg>
+  <div id="title">
+    <h1>中華民國 2020年<br>正副總統選舉</h1>
+    <p>製作／林瀚軒</p>
+  </div>
+  <div id="bottom-left">
+    <div id="hint">
+      <div class="h3">使用方式</div>
+      移動與縮放圖表來檢視
+    </div>
+    <div id="legend">
+      <div class="h3">得票率（%）</div>
+      <div class="party-container">
+        <div class="h4">親民黨</div>
+        <div class="legend-grid">
+          <span class="badge" style="background-color: #994E0D;"></span>
+          <span class="badge" style="background-color: #E67D21;"></span>
+          <span class="badge" style="background-color: #FF9B41;"></span>
+        </div>
+      </div>
+      <div class="party-container">
+        <div class="h4">國民黨</div>
+        <div class="legend-grid">
+          <span class="badge" style="background-color: #14438E;"></span>
+          <span class="badge" style="background-color: #3C79CF;"></span>
+          <span class="badge" style="background-color: #67A4EB;"></span>
+        </div>
+      </div>
+      <div class="party-container">
+        <div class="h4">民進黨</div>
+        <div class="legend-grid">
+          <span class="badge" style="background-color: #0E6837;"></span>
+          <span class="badge" style="background-color: #25A55C;"></span>
+          <span class="badge" style="background-color: #4DD68E;"></span>
+        </div>
+      </div>
+      <div class="party-container">
+        <span class="badge legend-text">&ensp;&#62;60%</span>
+        <span class="badge legend-text">&ensp;&#62;50%</span>
+        <span class="badge legend-text">&ensp;&#60;50%</span>
+      </div>
+    </div>
+  </div>
+  <div id="bottom-right">
+    <div id="switch">
+      <ul class="tab-controls">
+        <li class="tab-controls__item">
+          <a href="#" id="tab-city" class="tab-controls__link active" data-index="0">縣市</a>
+        </li>
+        <li class="tab-controls__item">
+          <a href="#" id="tab-town" class="tab-controls__link" data-index="1">鄉鎮市區</a>
+        </li>
+      </ul>
+    </div>
+    <div id="tooltip">
+      <div id="vote-region" class="h2">台北市 內湖區</div>
+      <div style="margin-bottom: 1rem;">
+        <div class="other-values-area">
+          有效票數
+          <span id="valid-vote" class="other-values">177062</span>
+        </div>
+        <div class="other-values-area">
+          總選舉人數
+          <span id="elector" class="other-values">230640</span>
+        </div>
+        <div class="other-values-area">
+          投票率
+          <span id="vote-rate" class="other-values">77.79%</span>
+        </div>
+      </div>
+      <div class="vote-count-area">
+        <div class="badge" style="background-color: #994E0D;">親民黨</div>
+        宋楚瑜 余湘
+        <span id="vote-count-1" class="vote-count highlight" style="color: #994E0D;">8356</span>
+      </div>
+      <div class="vote-count-area">
+        <div class="badge" style="background-color: #14438E;">國民黨</div>
+        韓國瑜 張善政
+        <span id="vote-count-2" class="vote-count highlight" style="color: #14438E;">74437</span>
+      </div>
+      <div class="vote-count-area">
+        <div class="badge" style="background-color: #0E6837;">民進黨</div>
+        蔡英文 賴清德
+        <span id="vote-count-3" class="vote-count highlight" style="color: #0E6837;">94269</span>
+      </div>
+    </div>
+    <div id="data-source-area">
+      <div class="h3">資料來源</div>
+      <div class="data-source-container">
+        <div class="h4">選舉結果資料：</div>
+        <a href="https://db.cec.gov.tw/histMain.jsp?voteSel=20200101A1&fbclid=IwAR0iO6jTQqKyJLz6FjfYy3I1QsJ4JkMbh2sKiRMofaBMUYgUkMM8eTlBAZc"
+          target="_blank">
+          中央選舉委員會
+        </a>&emsp;
+        <a href="https://www.kaggle.com/wendykan/taiwan-2020-presidential-election-results" target="_blank">
+          Kaggle
+        </a>
+      </div>
+      <div class="data-source-container">
+        <div class="h4">圖資：</div>
+        <a href="https://data.moi.gov.tw/MoiOD/Data/DataDetail.aspx?oid=12AC26DC-EE99-4C4B-AA8A-1AEDD9D8544C"
+          target="_blank">
+          內政部國土測繪中心
+        </a>
+      </div>
+    </div>
+  </div>
+  <script src="javascripts/index.js"></script>
+</body>
+
+</html>

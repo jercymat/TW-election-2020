@@ -1,0 +1,189 @@
+html {
+  font-family: 'Encode Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #F5F5F5;
+}
+
+svg {
+  width: 100vw;
+  height: 100vh;
+
+  & .map-region:hover {
+    fill: #666;
+  }
+
+  & .map-county-boundary {
+    fill: none;
+    stroke: #FFF5;
+    stroke-width: 1px;
+  }
+}
+
+a {
+  color: #008ABC;
+  text-decoration: none;
+
+  &:hover {
+    color: #20BEFF;
+  }
+}
+
+.h3 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.h4 {
+  margin-bottom: .25rem;
+}
+
+#title {
+  position: fixed;
+  top: 3rem;
+  left: 3rem;
+
+  & h1 {
+    margin: 0;
+    font-size: 3rem;
+  }
+
+  & p {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+  }
+}
+
+#bottom-right {
+  position: fixed;
+  right: 3rem;
+  bottom: 3rem;
+  width: 300px;
+
+  & > div {
+    background-color: #FFFFFF;
+    padding: 1rem;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  & > div#switch {
+    padding: 0;
+  }
+}
+
+.tab-controls {
+  display: flex;
+  align-items: stretch;
+  list-style-type: none;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.tab-controls__item {
+  width: 50%;
+}
+
+.tab-controls__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  height: 48px;
+
+  &.active {
+    background-color: #008ABC;
+    color: #FFFFFF;
+
+    &:hover {
+      transition: all .15s ease-in-out;
+      background-color: #20BEFF;
+    }
+  }
+
+  &:not(.active):hover {
+    transition: all .15s ease-in-out;
+    color: #20BEFF;
+  }
+}
+
+#tooltip {
+  & .h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: .5rem;
+  }
+
+  & .badge {
+    display: inline-block;
+    padding: .25rem .75rem .25rem .75rem;
+    color: #FFFFFF;
+    margin-right: .5rem;
+  }
+
+  & .vote-count-area:not(:last-child) {
+    margin-bottom: .5rem;
+  }
+
+  & .vote-count {
+    float: right;
+    line-height: 1.75;
+  }
+
+  & .other-values-area {
+    margin-bottom: .5rem;
+  }
+
+  & .other-values {
+    float: right;
+  }
+
+  & .highlight {
+    font-weight: bold;
+  }
+}
+
+.data-source-container:not(:last-child) {
+  margin-bottom: .5rem;
+}
+
+#bottom-left {
+  position: fixed;
+  left: 3rem;
+  bottom: 3rem;
+  width: 200px;
+
+  & > div {
+    background-color: #FFFFFF;
+    padding: 1rem;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+#legend {
+  & .legend-grid {
+    font-size: 0;
+  }
+
+  & .badge {
+    display: inline-block;
+    width: 48px;
+    height: 12px;
+
+    &.legend-text {
+      font-size: .75rem;
+    }
+  }
+}
+
+.party-container:not(:last-child) {
+  margin-bottom: .5rem;
+}
