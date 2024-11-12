@@ -1,56 +1,72 @@
 html {
-  font-family: 'Encode Sans', sans-serif; }
+  font-family: "Encode Sans", sans-serif;
+}
 
 body {
   margin: 0;
-  background-color: #F5F5F5; }
+  background-color: #f5f5f5;
+}
 
 svg {
   width: 100vw;
-  height: 100vh; }
-  svg .map-region:hover {
-    fill: #666; }
-  svg .map-county-boundary {
-    fill: none;
-    stroke: #FFF5;
-    stroke-width: 1px; }
+  height: 100vh;
+}
+svg .map-region:hover {
+  fill: #666;
+}
+svg .map-county-boundary {
+  fill: none;
+  stroke: #fff5;
+  stroke-width: 1px;
+}
 
 a {
-  color: #008ABC;
-  text-decoration: none; }
-  a:hover {
-    color: #20BEFF; }
+  color: #008abc;
+  text-decoration: none;
+}
+a:hover {
+  color: #20beff;
+}
 
 .h3 {
   font-weight: bold;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+}
 
 .h4 {
-  margin-bottom: .25rem; }
+  margin-bottom: 0.25rem;
+}
 
 #title {
   position: fixed;
   top: 3rem;
-  left: 3rem; }
-  #title h1 {
-    margin: 0;
-    font-size: 3rem; }
-  #title p {
-    margin-top: 1rem;
-    font-size: 1.25rem; }
+  left: 3rem;
+}
+#title h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+#title p {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+}
 
 #bottom-right {
   position: fixed;
   right: 3rem;
   bottom: 3rem;
-  width: 300px; }
-  #bottom-right > div {
-    background-color: #FFFFFF;
-    padding: 1rem; }
-    #bottom-right > div:not(:last-child) {
-      margin-bottom: 1rem; }
-  #bottom-right > div#switch {
-    padding: 0; }
+  width: 300px;
+}
+#bottom-right > div {
+  background-color: #ffffff;
+  padding: 1rem;
+}
+#bottom-right > div:not(:last-child) {
+  margin-bottom: 1rem;
+}
+#bottom-right > div#switch {
+  padding: 0;
+}
 
 .tab-controls {
   display: flex;
@@ -58,79 +74,98 @@ a {
   list-style-type: none;
   flex-wrap: nowrap;
   margin: 0 auto;
-  padding: 0; }
+  padding: 0;
+}
 
 .tab-controls__item {
-  width: 50%; }
+  width: 50%;
+}
 
 .tab-controls__link {
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  height: 48px; }
-  .tab-controls__link.active {
-    background-color: #008ABC;
-    color: #FFFFFF; }
-    .tab-controls__link.active:hover {
-      transition: all .15s ease-in-out;
-      background-color: #20BEFF; }
-  .tab-controls__link:not(.active):hover {
-    transition: all .15s ease-in-out;
-    color: #20BEFF; }
+  height: 48px;
+}
+.tab-controls__link.active {
+  background-color: #008abc;
+  color: #ffffff;
+}
+.tab-controls__link.active:hover {
+  transition: all 0.15s ease-in-out;
+  background-color: #20beff;
+}
+.tab-controls__link:not(.active):hover {
+  transition: all 0.15s ease-in-out;
+  color: #20beff;
+}
 
 #tooltip .h2 {
   font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom: .5rem; }
+  margin-bottom: 0.5rem;
+}
 
 #tooltip .badge {
   display: inline-block;
-  padding: .25rem .75rem .25rem .75rem;
-  color: #FFFFFF;
-  margin-right: .5rem; }
+  padding: 0.25rem 0.75rem 0.25rem 0.75rem;
+  color: #ffffff;
+  margin-right: 0.5rem;
+}
 
 #tooltip .vote-count-area:not(:last-child) {
-  margin-bottom: .5rem; }
+  margin-bottom: 0.5rem;
+}
 
 #tooltip .vote-count {
   float: right;
-  line-height: 1.75; }
+  line-height: 1.75;
+}
 
 #tooltip .other-values-area {
-  margin-bottom: .5rem; }
+  margin-bottom: 0.5rem;
+}
 
 #tooltip .other-values {
-  float: right; }
+  float: right;
+}
 
 #tooltip .highlight {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 .data-source-container:not(:last-child) {
-  margin-bottom: .5rem; }
+  margin-bottom: 0.5rem;
+}
 
 #bottom-left {
   position: fixed;
   left: 3rem;
   bottom: 3rem;
-  width: 200px; }
-  #bottom-left > div {
-    background-color: #FFFFFF;
-    padding: 1rem; }
-    #bottom-left > div:not(:last-child) {
-      margin-bottom: 1rem; }
+  width: 200px;
+}
+#bottom-left > div {
+  background-color: #ffffff;
+  padding: 1rem;
+}
+#bottom-left > div:not(:last-child) {
+  margin-bottom: 1rem;
+}
 
 #legend .legend-grid {
-  font-size: 0; }
+  font-size: 0;
+}
 
 #legend .badge {
   display: inline-block;
   width: 48px;
-  height: 12px; }
-  #legend .badge.legend-text {
-    font-size: .75rem; }
+  height: 12px;
+}
+#legend .badge.legend-text {
+  font-size: 0.75rem;
+}
 
 .party-container:not(:last-child) {
-  margin-bottom: .5rem; }
-
-/*# sourceMappingURL=style.css.map */
+  margin-bottom: 0.5rem;
+}

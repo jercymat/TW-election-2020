@@ -27,10 +27,10 @@ const path = d3
   );
 
 // data
-const regionMap = 'data/town_1090324.json';
-const countyMap = 'data/county_1090820.json'
-const townVote = 'data/town_vote.json';
-const countyVote = 'data/county_vote.json'
+const regionMap = 'public/data/town_1090324.json';
+const countyMap = "public/data/county_1090820.json";
+const townVote = "public/data/town_vote.json";
+const countyVote = "public/data/county_vote.json";
 
 // setup zoom handler
 svg.call(zoom);
